@@ -1,14 +1,12 @@
----
+----
 layout: default
 title: "My 8-Semester Journey"
 ---
 
 ---
-layout: default
-title: "Story 1: The Starting Days 🏛️"
----
+# Title: "The Starting Days 🏛️"
 
-# 🌸 My Journey to UET Faisalabad
+### 🌸 My Journey to UET Faisalabad
 
 Choosing UET Faisalabad Campus was never my original goal. As the eldest child of my family, there was no one to guide me on how to select a campus or a degree, so I only applied for Software Engineering at the main campus. When my name didn't appear there, I found myself looking at the downgrading list with only one option left: the Faisalabad Campus. I knew at any cost I had to choose a degree related to computers because it has always been my passion and interest. So, I came here to my destiny—the place where my journey as an engineer was meant to begin.
 
