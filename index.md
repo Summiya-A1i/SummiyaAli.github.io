@@ -24,7 +24,7 @@ I am *Summiya Tabbassum Ali, a Computer Engineering student at **UET Lahore (FSD
 This blog serves as a professional record of my undergraduate progress. My goal is to master the art of coding and hardware design while sharing my weekly reflections here! 🌟
 
 ### ✨ My Academic Goals
-*   *Mastering Code:* Building a rock-solid foundation in C++ and Logic Design. 💻
+*   *Mastering Code:* Building a rock-solid foundation in Python and Logic Design. 💻
 *   *Weekly Documentation:* Posting a blog every week to track my technical growth. ✍️
 *   *Girl Power in Tech:* Proving that girls can be the best engineers in the lab! 💪🎀
 
