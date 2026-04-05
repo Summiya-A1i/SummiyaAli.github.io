@@ -1,6 +1,4 @@
 ---
-layout: default
-title: "My 8-Semester Journey"
 layout: post
 title: "Story 1: The Starting Days 🏛️"
 date: 2026-03-10
