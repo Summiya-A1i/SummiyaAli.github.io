@@ -35,7 +35,7 @@
         .hero {
             height: 400px;
             background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
-                        url('PASTE_YOUR_PINTEREST_IMAGE_URL_HERE'); /* <--- Put your link here! */
+                        url('https://i.pinimg.com/1200x/52/88/e9/5288e904462b08a65196179399da57e7.jpg'); /* <--- Put your link here! */
             background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center;
             text-align: center; border-bottom: 3px solid var(--pink);
