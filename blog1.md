@@ -22,9 +22,7 @@ In our first semester, we began our journey with *Programming Fundamentals* usin
 
 was like announcing my arrival in the coding world, ready to conquer. Having *Dr. Bilal* as both our theory and lab teacher was a true advantage; the bridge between classroom and computer was seamless. Under his guidance, coding stopped being a subject and became a passion I am eager to master.
 
-<blockquote style="font-size: 1.4rem; color: var(--pink); border-left: 5px solid var(--pink); padding: 15px 25px; background: rgba(255, 105, 180, 0.05); border-radius: 0 15px 15px 0; margin-top: 30px; font-weight: bold; text-shadow: 0 0 10px rgba(255, 105, 180, 0.3);">
-    "Destination is not just a place; it's the passion you bring to it." ✨🎀🌷
-</blockquote>
+> "Destination is not just a place; it's the passion you bring to it." ✨🎀
 <br>
 <div style="text-align: center;">
     <img src="{{ site.baseurl }}/assets/images/uet_gate.jpeg" 
