@@ -35,6 +35,4 @@ Programming Fundamentals (PF) is easily the highlight of my week! ⌨️💕 Dr.
 
 ---
 
----
-
 > "Logic is the heart of code, but snacks are the fuel for the coder." 🌸🌷✨
