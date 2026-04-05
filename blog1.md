@@ -17,7 +17,9 @@ My first destination upon arriving at the campus was the hostel, accompanied by 
 
 ### 🐍 Entering the World of Python
 In our first semester, we began our journey with *Programming Fundamentals* using Python. Coming from an ICS background, I felt fortunate because I had already studied C++ in HSSC Part 2, which made the transition to Python feel natural and exciting. While others saw code as just structural formulas, for me, writing my first code
+
 ```print("Hello World!")```
+
 was like announcing my arrival in the coding world, ready to conquer. Having *Dr. Bilal* as both our theory and lab teacher was a true advantage; the bridge between classroom and computer was seamless. Under his guidance, coding stopped being a subject and became a passion I am eager to master.
 
 > "Destination is not just a place; it's the passion you bring to it." ✨🎀
