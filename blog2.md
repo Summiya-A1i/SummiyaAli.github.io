@@ -5,7 +5,7 @@ date: 2026-03-10
 categories: semester-1
 ---
 ---
-# Title: "Pre-Mid Vibes 🏛️✨"
+# Title: "Story 2: Pre-Mid Vibes 🏛️✨"
 
 ### 🌸 Navigating the New Environment
 
