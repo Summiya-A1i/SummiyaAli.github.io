@@ -23,13 +23,15 @@ Transitioning to studying from online resources was a huge shift from high schoo
 
 Programming Fundamentals (PF) is easily the highlight of my week! ⌨️💕 Dr. Bilal doesn't just teach us Python; he shows us the real-world scope of being an engineer. Even though the three-hour labs are long, they are never boring for me because I’m so excited to code! 💾✨ We spend our time secretly sharing code snippets to complete tasks and hiding snacks under our desks—it’s been so fun going from setting up the interpreter to mastering the *logic of loops*. 🥨🐍 Setting that first loop was the moment I truly felt like a coder! 🎀👩‍💻
 
----
-
-### 📸 My Journey in Photos
-![Lab Vibes]({{ site.baseurl }}/assets/images/lab_pic.jpeg)
-Code, Learning, and Secret Snacks! 🥨⌨️✨
-
----
+<br>
+<div style="text-align: center;">
+    <img src="{{ site.baseurl }}/assets/images/lab_pic.jpeg" 
+         style="width: 450px; height: auto; max-width: 90%; border-radius: 20px; border: 2px solid var(--pink); box-shadow: 0 0 25px rgba(255, 105, 180, 0.4); margin: 20px auto;">
+    <p style="font-style: italic; color: #888; margin-top: 10px; font-size: 0.9rem;">
+        ✨ Digital notes, code, and secret lab snacks! 🥨⌨️🌷
+    </p>
+</div>
+<br>
 
 ---
 
