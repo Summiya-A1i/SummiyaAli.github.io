@@ -20,7 +20,7 @@ Post-midterms, my PF journey took a thrilling turn: I was assigned my very first
     <img src="{{ site.baseurl }}/assets/images/notebook_art.jpeg" 
          style="width: 450px; height: auto; max-width: 90%; border-radius: 20px; border: 2px solid var(--pink); box-shadow: 0 0 25px rgba(255, 105, 180, 0.4); margin: 20px auto;">
     <p style="font-style: italic; color: #888; margin-top: 10px; font-size: 0.9rem;">
-        ✨ Solo study sessions and endless midnight noodles! 🍜📑🌸
+        ✨ Just me, my notes, and some Python logic! 🌷🎀📖
     </p>
 </div>
 <br>
