@@ -1,8 +1,6 @@
 ---
-layout: post
-title: "Story 2: Pre-Mid Vibes 🏛️✨"
-date: 2026-03-10
-categories: semester-1
+layout: default
+title: "My 8-Semester Journey"
 ---
 ---
 # Title: "Story 2: Pre-Mid Vibes 🏛️✨"
