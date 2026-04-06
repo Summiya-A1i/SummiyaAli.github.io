@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summiya's Journey | {{ page.title }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-        <style>
+    <style>
         :root {
             --pink: #ff69b4; 
             --black: #0d0d0d;
@@ -18,10 +18,10 @@
             color: #f0f0f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0; padding: 0;
-            display: flex; /* Kept for laptop layout */
+            display: flex; 
         }
 
-        /* 🎀 SIDEBAR */
+        /* 🎀 FIXED SIDEBAR */
         .sidebar {
             width: var(--sidebar-width);
             height: 100vh;
@@ -33,7 +33,7 @@
             padding: 30px 20px;
             box-sizing: border-box;
             z-index: 1000;
-            transition: 0.4s ease-in-out;
+            transition: 0.4s ease-in-out; /* Smooth slide for mobile */
         }
 
         .sidebar .logo { 
@@ -41,47 +41,182 @@
             text-shadow: 0 0 10px var(--pink); margin-bottom: 40px; text-align: center;
         }
 
-        /* 🌸 MAIN CONTENT - Laptop Centering Fix */
+        .sidebar-links { display: flex; flex-direction: column; gap: 15px; }
+        
+        .sidebar-links a { 
+            color: #bbb; text-decoration: none; font-weight: 500; font-size: 0.95rem; 
+            padding: 10px; border-radius: 8px; transition: 0.3s;
+        }
+        
+        .sidebar-links a:hover { background: rgba(255, 105, 180, 0.1); color: var(--pink); }
+
+        /* 🖱️ SIDEBAR DROPDOWN */
+        .dropdown { display: flex; flex-direction: column; }
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            padding-left: 20px;
+            margin-top: 5px;
+            border-left: 1px solid #333;
+        }
+        .dropdown:hover .dropdown-content { display: flex; }
+        .dropdown-content a { font-size: 0.8rem; color: #888; }
+
+        /* 🌸 MAIN CONTENT AREA */
         .main-content {
             margin-left: var(--sidebar-width); 
-             width: calc(100% - var(--sidebar-width)); /* This keeps laptop view perfect */
+            width: 100%;
             min-height: 100vh;
         }
 
-        /* 📱 MENU ICON - Pink Visibility Fix */
-        .menu-icon {
-            display: none; /* Hidden on laptop */
-            background: rgba(13, 13, 13, 0.9) !important;
-              border: 2px solid var(--pink) !important;
-            color: var(--pink) !important; /* FORCES TEXT TO BE PINK */
-            padding: 8px 12px;
-            border-radius: 8px;
-            cursor: pointer;
-            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
-            position: fixed !important;
-            top: 15px; left: 15px;
-            z-index: 9999 !important;
-            font-weight: bold;
+        /* ✨ HERO SECTION */
+        .hero {
+            height: 350px;
+            background: linear-gradient(rgba(13,13,13,0.8), rgba(13,13,13,0.8)), 
+                        url('https://i.pinimg.com/1200x/52/88/e9/5288e904462b08a65196179399da57e7.jpg'); 
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            text-align: center; border-bottom: 2px solid var(--pink);
         }
 
-        /* 📲 MOBILE OVERRIDE */
-        @media (max-width: 850px) {
-            body { display: block !important; }
-            .menu-icon { display: block !important; } 
+        .hero h1 { font-size: 3rem; color: var(--pink); margin: 0; text-shadow: 2px 2px 10px #000; }
+        .hero p { color: #fff; text-transform: uppercase; letter-spacing: 3px; font-size: 0.9rem; margin-top: 10px; }
 
+        .badge {
+            background: rgba(255, 105, 180, 0.1);
+            border: 1px solid var(--pink);
+            padding: 8px 18px; border-radius: 30px;
+            margin-top: 15px; color: white; font-weight: bold; font-size: 0.8rem;
+        }
+
+        /* 📄 ARTICLE CONTAINER */
+        .container {
+            max-width: 800px; margin: 40px auto; padding: 30px;
+            background: var(--surface); border-radius: 12px;
+            border: 1px solid #222; box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        /* 📱 MOBILE NAVIGATION STYLES */
+        @media screen and (max-width: 850px) {
+            body { 
+                display: block !important; 
+            }
+
+            /* 🚀 1. FORCE THE MENU BUTTON TO APPEAR & FLOAT */
+            .menu-icon { 
+                display: block !important; 
+                position: fixed !important; 
+                top: 15px !important; 
+                left: 15px !important; 
+                z-index: 9999 !important; 
+                background: rgba(13, 13, 13, 0.9) !important;
+                border: 2px solid var(--pink) !important;
+                box-shadow: 0 0 15px rgba(255, 105, 180, 0.5) !important;
+            }
+
+            /* 🚀 2. HIDE SIDEBAR & REMOVE THE TOP BLACK GAP */
             .sidebar { 
+                position: fixed !important; 
+                top: 0 !important;
                 left: -280px !important; 
-                position: fixed !important;
+                width: 260px !important; 
+                height: 100vh !important; 
+                z-index: 3000 !important;
+                transition: 0.4s ease-in-out !important;
             }
 
-            .sidebar.active { left: 0 !important; }
+            .sidebar.active {
+                left: 0 !important; 
+            }
 
+            /* 🚀 3. PUSH YOUR NAME & BANNER TO THE VERY TOP */
             .main-content { 
-                margin-left: 0 !important;
+                margin-left: 0 !important; 
+                padding-top: 0 !important; 
                 width: 100% !important;
-                padding-top: 0 !important;
             }
 
-            .hero { margin-top: 0 !important; }
+            .hero {
+                margin-top: 0 !important;
+                padding-top: 20px !important; /* Small padding so your name isn't touching the edge */
+            }
         }
     </style>
+</head>
+<body>
+
+    <!-- 📱 Mobile Toggle Button -->
+    <button id="menu-toggle" class="menu-icon">☰ Menu</button>
+
+    <!-- 🗺️ SIDE NAVIGATION -->
+    <div class="sidebar">
+        <div class="logo">Summiya.Codes 🎀</div>
+        <div class="sidebar-links">
+            <a href="{{ site.baseurl }}/">Home 🏠</a>
+            <a href="{{ site.baseurl }}/about">About Me 👩‍💻</a>
+            
+            <div class="dropdown">
+                <a href="{{ site.baseurl }}/semester1">Semester 1 📂</a>
+                <div class="dropdown-content">
+                    <a href="{{ site.baseurl }}/blog1">The Starting Days 🌸</a>
+                    <a href="{{ site.baseurl }}/blog2">Pre-Mid Vibes 💻</a>
+                    <a href="{{ site.baseurl }}/blog3">The Midterm Hustle ✨</a>
+                    <a href="{{ site.baseurl }}/blog4">Innovation Era 📚</a>
+                    <a href="{{ site.baseurl }}/blog5">The Final Sprint  ✅</a>
+                    <a href="{{ site.baseurl }}/blog6">Finalss 🎓</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="{{ site.baseurl }}/semester2">Semester 2 ✨</a>
+                <div class="dropdown-content">
+                    <a href="{{ site.baseurl }}/week1">Week 1 Reflection ✍️</a>
+                    <a href="{{ site.baseurl }}/week2">Week 2 Reflection ⚙️</a>
+                </div>
+            </div>
+
+            <a href="{{ site.baseurl }}/blog">Blog Feed 📝</a>
+        </div>
+    </div>
+
+    <!-- 💻 MAIN DISPLAY -->
+    <div class="main-content">
+        <div class="hero">
+            <h1>Summiya Tabbassum Ali</h1>
+            <p>Computer Engineering | UET Lahore</p>
+            <div class="badge">
+                📧 25bscpe112@gmail.com | 🆔 2025-BSCPE-112
+            </div>
+        </div>
+
+        <div class="container">
+            {{ content }}
+        </div>
+
+        <footer style="text-align: center; padding: 40px; color: #444; font-size: 0.8rem;">
+            &copy; 2024 - 2028 | Engineering with Passion 🎀⚙️
+        </footer>
+    </div>
+
+    <!-- 🪄 Side-Drawer Logic -->
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            sidebar.classList.toggle('active');
+            toggleBtn.innerText = sidebar.classList.contains('active') ? '✕ Close' : '☰ Menu';
+        });
+
+        // Close menu if user clicks outside of it
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+                toggleBtn.innerText = '☰ Menu';
+            }
+        });
+    </script>
+
+</body>
+</html>
