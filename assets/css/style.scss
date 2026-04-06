@@ -1,1 +1,47 @@
+---
+---
 
+/* --- Pro-Engineer Mobile View Fix --- */
+@media screen and (max-width: 800px) {
+  
+  /* 1. Reset the sidebar so it doesn't squash the screen */
+  .sidebar {
+    width: 100% !important;
+    position: relative !important;
+    height: auto !important;
+    border-right: none !important;
+    border-bottom: 2px solid #ff69b4 !important; 
+    padding: 20px 0 !important;
+    display: block !important;
+    background: #111 !important; /* Matches your dark theme */
+  }
+
+  /* 2. Turn the long list into a cute 2-column grid */
+  nav ul {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; 
+    gap: 12px !important;
+    padding: 0 20px !important;
+    list-style: none !important;
+  }
+
+  /* 3. Make the links look like aesthetic pink buttons */
+  nav a {
+    background: rgba(255, 105, 180, 0.1) !important;
+    border: 1px solid #ff69b4 !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+    font-size: 0.85rem !important;
+    text-align: center !important;
+    display: block !important;
+    text-decoration: none !important;
+    color: #fff !important;
+  }
+  
+  /* 4. Ensure your main content takes up the full width */
+  .content, .main {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding: 20px !important;
+  }
+}
