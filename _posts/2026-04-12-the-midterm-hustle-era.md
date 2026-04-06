@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "My 8-Semester Journey"
+title: "Semester 1 Struggels"
 ---
 ---
 # Title: "Story 3: The Midterm Hustle 📑🎀"
