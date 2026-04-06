@@ -35,7 +35,7 @@ The semester concluded with a high-energy "Final Sprint" that I’ll never forge
 ---
 
 <div style="text-align: center;">
-    <img src="{{ site.baseurl }}/assets/images/uni_road.jpeg" 
+    <img src="{{ site.baseurl }}/assets/images/2025.jpeg" 
          style="width: 450px; height: auto; max-width: 90%; border-radius: 20px; border: 2px solid var(--pink); box-shadow: 0 0 25px rgba(255, 105, 180, 0.4); margin: 20px auto;">
     <p style="font-style: italic; color: #888; margin-top: 10px;">✨ One semester coded, a lifetime of stories to go! 🏛️🦢🛣️</p>
 </div>
